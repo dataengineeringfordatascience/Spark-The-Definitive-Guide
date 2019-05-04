@@ -112,8 +112,10 @@ explain table_name
 
 ### 서브쿼리-1) correlated / uncorrelated ? 
 
-```상관서브쿼리란?```  조인같음…조건 2개씩 걸어도 됨.
+```상관서브쿼리란?``` <br/> 
   : 내부쿼리가 외부쿼리의 컬럼을 이용한 결과를 외부에 반출한다
+   조인같음…조건 2개씩 걸어도 됨.
+
 
   (순서반복)
   * 외부 쿼리의 행을 가져온다.
@@ -125,7 +127,7 @@ explain table_name
 ```predicate란?``` <br/>
   : a logical condition being applied to rows in a table. SQL Predicates are found on the tail end of clauses, functions, and SQL expressions in existing query statements. It is an expression that evaluates to **TRUE**, **FALSE**, or **UNKNOWN**. 
 
-  
+--- 
 
 **How to filter 'unique and used' value of a column** :
 
