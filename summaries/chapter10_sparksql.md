@@ -107,6 +107,7 @@ explain table_name
   * ex : select a.id () from a
 
 > FROM 절 위치: 인라인 뷰
+
 > WHERE 절 위치 : 서브쿼리
 
 
