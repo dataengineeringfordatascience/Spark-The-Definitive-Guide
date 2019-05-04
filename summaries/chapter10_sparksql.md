@@ -90,8 +90,8 @@ explain table_name
 - complex types : Struct, List
 - subquries [서브쿼리] https://ttend.tistory.com/624 
 
-: correlated / uncorrelated ?
-  : scalar / predicate?
+: correlated / uncorrelated ? <br/>
+: scalar / predicate?
 
   
 
