@@ -101,9 +101,9 @@ explain table_name
 
 > SELECT,ORDER BY절 위치: 스칼라 서브쿼리
 
-  *데이터건수가 적을때, 조인보다 빠름. 
-  *반드시 하나의 결과만 리턴
-  *where문을 뽑아서 새로운 select문을  만들면 끝
+  * 데이터건수가 적을때, 조인보다 빠름. 
+  * 반드시 하나의 결과만 리턴
+  * where문을 뽑아서 새로운 select문을  만들면 끝
 
 select a.id () from a
 
@@ -111,10 +111,10 @@ select a.id () from a
 
 > WHERE 절 위치 : 서브쿼리
 
-  
+서브쿼리-1) correlated / uncorrelated ? <br/>
 
-  *상관서브쿼리란? 조인같음…조건 2개씩 걸어도 됨.
 
+```상관서브쿼리란?```  조인같음…조건 2개씩 걸어도 됨.
   : 내부쿼리가 외부쿼리의 컬럼을 이용한 결과를 외부에 반출한다
 
   
@@ -127,9 +127,9 @@ select a.id () from a
 
   서브쿼리의 결과값으로 외부쿼리의 행 선택여부를 결정한다.
 
-  
+서브쿼리-2) scalar / predicate?
 
-  *predicate란?
+```predicate란?```
   : a logical condition being applied to rows in a table. SQL Predicates are found on the tail end of clauses, functions, and SQL expressions in existing query statements. It is an expression that evaluates to **TRUE**, **FALSE**, or **UNKNOWN**. 
 
   
