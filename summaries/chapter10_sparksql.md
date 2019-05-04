@@ -89,6 +89,7 @@ explain table_name
 5.Standard SQL 기본제공 기능
 
 - complex types : Struct, List
+- fuctions(+user defined fuctions)
 - subquries [서브쿼리] https://ttend.tistory.com/624 
 
 : correlated / uncorrelated ? <br/>
@@ -96,9 +97,9 @@ explain table_name
 
   
 
-  서브쿼리란?  내부쿼리( 쿼리안에 포함된 쿼리 )
+  ```서브쿼리란?```  내부쿼리( 쿼리안에 포함된 쿼리 )
 
-- SELECT,ORDER BY절 위치: 스칼라 서브쿼리
+> SELECT,ORDER BY절 위치: 스칼라 서브쿼리
 
   *데이터건수가 적을때, 조인보다 빠름. 
   *반드시 하나의 결과만 리턴
@@ -106,9 +107,9 @@ explain table_name
 
 select a.id () from a
 
-- FROM 절 위치: 인라인 뷰
+> FROM 절 위치: 인라인 뷰
 
-- WHERE 절 위치 : 서브쿼리
+> WHERE 절 위치 : 서브쿼리
 
   
 
@@ -133,13 +134,13 @@ select a.id () from a
 
   
 
-  **How to filter 'unique and used' value of a column** :
+**How to filter 'unique and used' value of a column** :
 
   ​	select a.name from a 
 
   ​	where exist (select 1 from b where id =a.id)
 
-  **How to deal with null value** : 
+**How to deal with null value** : 
 
   ​	nvl (colname, default value if colname is null)
 
@@ -147,4 +148,4 @@ select a.id () from a
 
   ​	coalesce(colname1, colname2 if colname1 is null, default value if both are null)
 
-- fuctions(+user defined fuctions)
+
