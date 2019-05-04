@@ -104,32 +104,25 @@ explain table_name
   * 데이터건수가 적을때, 조인보다 빠름. 
   * 반드시 하나의 결과만 리턴
   * where문을 뽑아서 새로운 select문을  만들면 끝
-
-select a.id () from a
+  * ex : select a.id () from a
 
 > FROM 절 위치: 인라인 뷰
-
 > WHERE 절 위치 : 서브쿼리
 
-서브쿼리-1) correlated / uncorrelated ? <br/>
 
+### 서브쿼리-1) correlated / uncorrelated ? 
 
 ```상관서브쿼리란?```  조인같음…조건 2개씩 걸어도 됨.
   : 내부쿼리가 외부쿼리의 컬럼을 이용한 결과를 외부에 반출한다
 
-  
-
   (순서반복)
+  * 외부 쿼리의 행을 가져온다.
+  * 이를 이용해 서브쿼리를 수행한다.(동일 테이블을 **중복사용**가능)
+  * 서브쿼리의 결과값으로 외부쿼리의 행 선택여부를 결정한다.
 
-  외부 쿼리의 행을 가져온다.
+### 서브쿼리-2) scalar / predicate? 
 
-  이를 이용해 서브쿼리를 수행한다.(동일 테이블을 **중복사용**가능)
-
-  서브쿼리의 결과값으로 외부쿼리의 행 선택여부를 결정한다.
-
-서브쿼리-2) scalar / predicate?
-
-```predicate란?```
+```predicate란?``` <br/>
   : a logical condition being applied to rows in a table. SQL Predicates are found on the tail end of clauses, functions, and SQL expressions in existing query statements. It is an expression that evaluates to **TRUE**, **FALSE**, or **UNKNOWN**. 
 
   
